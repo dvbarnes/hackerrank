@@ -2,7 +2,10 @@ import Text.Printf (printf)
 
 -- This function should return a list [area, volume].
 solve :: Int -> Int -> [Int] -> [Int] -> [Double]
-solve l r a b = [f a b l 0 - f a b r 0, 0 ]
+solve l r a b = [solve' a b l - solve' a b r , 0 ]
+
+solve' :: Int -> Int -> [Int] -> [Int] -> [Double]
+solve' l r a b = [f a b l 0 - f a b r 0, 0 ]
 
 f :: [Int] -> [Int] -> Int -> Double -> Double
 f [] [] _ n =  n
