@@ -1,0 +1,1 @@
+select [Name] From [City] where [CountryCode] = 'JPN'

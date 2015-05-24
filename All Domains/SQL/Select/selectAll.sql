@@ -1,0 +1,1 @@
+select [ID], [Name], [CountryCode], [District], [Population] From [City]
