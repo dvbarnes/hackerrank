@@ -1,0 +1,1 @@
+select SUM([Population]) From [City] where [CountryCode] = 'JPN'
